@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> TDO - HW1 </title>
+          <!--Bootstrap-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+          <!--Sweet Alert-->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+          <!--Styles CSS-->
+            <link rel="stylesheet" href="./../assets/css/site.css" />
+
+         <!--Font awesome icons -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </header>
+    <body onload="LoadStore()">
+        <!--Nav-->
+        <nav class="navbar bg-light">
+          <button class="btn btn-light" onclick="openStore()">
+              <a class="navbar-brand" >
+                  <img src="./../assets/images/logo.png" alt="logo" style="width:40px;">
+              </a> 
+            </button>
+            <button class="btn btn-light" onclick="openCart()">
+              <span class="navbar-text">
+                <div style="margin-right: 0;">
+                    <i class="fa fa-cart-plus"> </i>
+                    <span id="totalIncart">0</span>
+                </div>
+              </span>
+            </button>
+          </nav>
+        <!--Nav-->
+        <br>
+        <!--Content-->
+        <div id="home"  class="container-fluid">
+
+          <!--Heading-->
+          <div class="row">
+             <h2 class="heading">Computers</h2>
+          </div>
+
+          <!--Store Info etc-->
+          <div id="StoreItems">
+
+          </div>
+        </div>
+
+        <div id="cart" class="container-fluid">
+          <!--Heading-->
+          <div class="row">
+             <h2 class="heading">Cart</h2>
+          </div>
+          <br>
+          <!--Store Info etc-->
+          <div id="StoreItems">
+              <table class="table">
+                  <thead class="bg-dark text-light">
+                      <th>Accessory</th>
+                      <th>Unit Price</th>
+                      <th>Quantity</th>
+                      <th>Total Cost</th>
+                  </thead>
+                  <tbody id="tbody">
+
+                  </tbody>
+              </table>
+          </div>
+        </div>
+
+        <!--Content-->
+
+        <!--Modal-->
+        <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                      <p><b>Title:</b>  <span id="showTitle"></span></p><br>
+                      <p><b>Creator:</b>  <span id="showCreator"></span></p><br>
+                      <p><b>Realease Year:</b>  <span id="showYear"></span></p><br>
+                      <p><b>Price: R </b>  <span id="showPrice"></span></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!--Javascript-->
+        <script  src="./../assets/js/site.js"></script>
+    </body>
+</html>

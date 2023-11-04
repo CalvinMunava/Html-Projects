@@ -1,0 +1,42 @@
+body 
+{
+    color: black;
+}
+
+:root{
+    --color:  #14746f
+}
+
+.heading {
+    font-weight: 600;
+    margin-left: 2%;
+}
+
+.price{
+    color: rgb(16, 79, 143);
+    float: right;
+}
+
+.card{
+    width:400px;
+    height:100%
+}
+
+.card-image-top{
+    width:100%
+}
+
+.imageDiv{
+    width: 60%;
+    height: 50%;
+    align-items: center;
+}
+
+
+.btn-danger {
+    border-radius: 100px;
+  }
+
+.totalLine{
+    border-top: 2px solid black;
+}
